@@ -1,0 +1,6 @@
+opencv-python-headless
+plyfile
+numpy
+tqdm
+ultralytics
+matplotlib
