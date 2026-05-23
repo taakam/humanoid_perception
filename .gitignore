@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.env/
+
+# Model weights
+weights/
+*.pt
+*.pth
+*.ckpt
+
+# Gaussian splatting
+third_party/
+
+# Logs / outputs
+runs/
+outputs/
+logs/
+
+# Viewer
+viewer/node_modules/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+*.pt
