@@ -300,25 +300,14 @@ viewer/data/scene_graph.json
 
 ---
 
-# Large Assets
+## Example Assets
 
-Large files such as:
+Input video:
+https://drive.google.com/file/d/1ELaW3fRAFLGJjiL8mcGgzbDxtTzVOlUI/view?usp=sharing
 
-* raw input videos
-* Gaussian Splatting outputs
-* full reconstruction videos
-* large point clouds
-* trained weights
 
-are not stored directly in GitHub.
-
-External asset links can be added here:
-
-```text
-Google Drive / Hugging Face / Dropbox link
-```
-
----
+Example reconstruction outputs (.ply, semantic scene graph, renders):
+https://drive.google.com/drive/folders/1wQ1lvLujX6R0GlwFsiGuAxuhuLTbRdJF?usp=sharing
 
 # Design Choices and Tradeoffs
 
