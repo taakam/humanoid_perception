@@ -320,6 +320,67 @@ Google Drive / Hugging Face / Dropbox link
 
 ---
 
+# Design Choices and Tradeoffs
+
+## Why Gaussian Splatting?
+
+Gaussian Splatting was chosen because it provides:
+
+* significantly faster rendering than NeRF-style volumetric methods,
+* interactive visualization capabilities,
+* high-quality geometry and appearance reconstruction,
+* compatibility with downstream spatial AI applications.
+
+The tradeoff is that Gaussian Splatting is primarily a rendering-oriented representation rather than a physics-aware world model.
+
+---
+
+## Why YOLO-World?
+
+YOLO-World enables flexible open-vocabulary object detection while remaining lightweight and easy to integrate into a modular pipeline.
+
+The tradeoff is that purely 2D detections can produce noisy associations when projected into sparse 3D geometry.
+
+---
+
+## Why Monocular Video?
+
+The pipeline intentionally uses monocular video only in order to:
+
+* reduce hardware requirements,
+* improve accessibility,
+* simplify data collection.
+
+The tradeoff is reduced geometric robustness compared to RGB-D or multi-camera systems.
+
+---
+
+## Why Semantic Scene Graphs?
+
+The semantic scene graph provides a higher-level structured representation of the environment that can support:
+
+* robotic reasoning,
+* embodied AI interaction,
+* navigation,
+* affordance-aware planning.
+
+Rather than storing only geometry, the system attempts to encode semantic relationships between objects.
+
+---
+
+## Design Philosophy
+
+The project prioritizes:
+
+* modularity,
+* readability,
+* reproducibility,
+* practical experimentation.
+
+The goal was not to build a state-of-the-art reconstruction method, but rather a clean and extensible spatial AI pipeline that integrates geometry, semantics, and interactive visualization.
+
+---
+
 # Notes and Limitations
 
 * Reconstruction quality depends heavily on input video quality, camera motion, lighting, and scene texture.
